@@ -71,4 +71,10 @@
 ## [2026-07-21] ingest | AA-WER v2.0 article + missing concept pages
 - Created: [[sources/aa-wer-v2]], [[concepts/deepswe]], [[concepts/swatlas-qna]], [[concepts/aa-agenttalk]], [[concepts/voxpopuli-cleaned-aa]], [[concepts/earnings22-cleaned-aa]]
 - Updated: [[index]]
-- Notes: Filled gaps found during lint. DeepSWE and SWE-Atlas-QnA are Coding Agent Index components. AA-AgentTalk, VoxPopuli-Cleaned-AA, Earnings22-Cleaned-AA are the 3 datasets composing AA-WER v2.0+. Saved authoritative source: AA-WER v2.0 blog post and HuggingFace dataset cards to raw/.
+- Notes: Filled gaps found during lint.
+
+## [2026-07-21] ingest | 14 organization profiles (raw + entity pages)
+- Created: 13 raw source files in `raw/org-*.md` — Anthropic, Mistral, Cohere, Google, Kimi, xAI, MiniMax, NVIDIA, Alibaba, Xiaomi, Z AI, Thinking Machines, MBZUAI, Tencent
+- Created: 14 entity pages — [[entities/orgs/anthropic]], [[entities/orgs/mistral]], [[entities/orgs/cohere]], [[entities/orgs/google]], [[entities/orgs/kimi]], [[entities/orgs/spacexai]], [[entities/orgs/minimax]], [[entities/orgs/nvidia]], [[entities/orgs/alibaba]], [[entities/orgs/xiaomi]], [[entities/orgs/z-ai]], [[entities/orgs/thinking-machines]], [[entities/orgs/mbzuai]], [[entities/orgs/tencent]]
+- Updated: [[index]] — all 14 org entries now resolve (broken links fixed)
+- Notes: DeepSeek raw file skipped (already summarized in existing entity page). Entity pages cross-reference methodology, intelligence-benchmarking, and other AA sources where relevant. DeepSWE and SWE-Atlas-QnA are Coding Agent Index components. AA-AgentTalk, VoxPopuli-Cleaned-AA, Earnings22-Cleaned-AA are the 3 datasets composing AA-WER v2.0+. Saved authoritative source: AA-WER v2.0 blog post and HuggingFace dataset cards to raw/.
