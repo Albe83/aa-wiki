@@ -13,39 +13,39 @@ status: processed
 
 ## Summary
 
-Pagina metodologica che descrive come Artificial Analysis misura le performance delle API dei modelli linguistici. Il principio guida è misurare l'esperienza end-to-end dell'utente finale: prompt inviato, risposta ricevuta. Vengono utilizzati workload diversificati (1K, 10K, 100K input token, vision) e due scenari di carico (prompt singolo, 10 prompt paralleli), con test ripetuti regolarmente (fino a 8 volte al giorno).
+Methodological page describing how Artificial Analysis measures language model API performance. The guiding principle is to measure the end-to-end experience of the end user: prompt sent, response received. Diversified workloads are used (1K, 10K, 100K input tokens, vision) and two load scenarios (single prompt, 10 parallel prompts), with tests repeated regularly (up to 8 times per day).
 
-La metodologia copre definizioni chiave (TTFT, Output Speed, Response Time), dettagli tecnici (server us-central1, parametri API, tokenizzazione o200k_base), metriche di rappresentazione (mediana P50 su 72 ore) e limitazioni note. Include anche termini di integrità che vietano ai provider di trattare il traffico AA in modo diverso da quello degli utenti ordinari.
+The methodology covers key definitions (TTFT, Output Speed, Response Time), technical details (us-central1 server, API parameters, o200k_base tokenization), representation metrics (P50 median over 72 hours), and known limitations. It also includes integrity terms that prohibit providers from treating AA traffic differently from ordinary users.
 
 ## Key points
 
-- 4 tipi di workload: 1K token input, 10K (default), 100K, vision (1MP image)
-- 2 scenari di carico: prompt singolo, 10 prompt paralleli simultanei
-- Frequenza test: ogni 3 ore per workload principali, 1 volta/giorno per parallelo, 1 volta/settimana per 100K
-- Prompt unici a ogni test run per evitare caching effects e misurare variazioni reali di output speed
-- Mediana P50 su 72 ore come metrica rappresentativa (14 giorni per workload 100K)
-- Server in Google Cloud us-central1-a; mix di account anonimi, accreditati e benchmark key
-- Temperature 0.6 per reasoning models, 0 per non-reasoning; top_p 1
-- Tokenizzazione o200k_base per performance benchmarking; provider-reported per costi Intelligence Index
-- Integrità: i provider non devono rilevare o trattare diversamente il traffico AA
+- 4 workload types: 1K input tokens, 10K (default), 100K, vision (1MP image)
+- 2 load scenarios: single prompt, 10 simultaneous parallel prompts
+- Test frequency: every 3 hours for main workloads, 1x/day for parallel, 1x/week for 100K
+- Unique prompts at each test run to avoid caching effects and measure real output speed variations
+- P50 median over 72 hours as the representative metric (14 days for 100K workload)
+- Servers in Google Cloud us-central1-a; mix of anonymous, authenticated, and benchmark key accounts
+- Temperature 0.6 for reasoning models, 0 for non-reasoning; top_p 1
+- o200k_base tokenization for performance benchmarking; provider-reported for Intelligence Index costs
+- Integrity: providers must not detect or treat AA traffic differently
 
 ## Entities mentioned
 
-- [[entities/orgs/openai]] — libreria Python OpenAI usata per provider compatibili; tokenizer o200k_base
+- [[entities/orgs/openai]] — OpenAI Python library used for compatible providers; o200k_base tokenizer
 
 ## Concepts mentioned
 
 - [[concepts/output-speed]] — TTFT, Time to First Answer Token, Output Speed, Response Time
-- [[concepts/token]] — tokenizzazione o200k_base vs native token; efficienza del tokenizer
-- [[concepts/cost-per-task]] — relazione con pricing via token provider-reported
+- [[concepts/token]] — o200k_base vs native token tokenization; tokenizer efficiency
+- [[concepts/cost-per-task]] — relationship with pricing via provider-reported tokens
 
 ## Related sources
 
-- [[sources/methodology]] — metodologia generale AA, definizioni standard
-- [[sources/intelligence-benchmarking]] — metriche di intelligenza a cui si rapportano i costi
+- [[sources/methodology]] — general AA methodology, standard definitions
+- [[sources/intelligence-benchmarking]] — intelligence metrics to which costs are related
 
 ## My notes
 
-- v2.2.0 (Marzo 2026) ha spostato il workload default da 1K a 10K input token: segnale che i prompt reali stanno diventando più lunghi
-- La distinzione TTFT / Time to First Answer Token è critica per i reasoning models — senza, il tempo di ragionamento verrebbe confuso con latenza di risposta
-- I termini di integrità sono stringenti: niente hardware dedicato, code di priorità o configurazioni non pubbliche per il traffico AA
+- v2.2.0 (March 2026) moved the default workload from 1K to 10K input tokens: a signal that real prompts are getting longer
+- The TTFT / Time to First Answer Token distinction is critical for reasoning models — without it, reasoning time would be confused with response latency
+- Integrity terms are stringent: no dedicated hardware, priority queues, or non-public configurations for AA traffic

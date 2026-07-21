@@ -13,36 +13,36 @@ status: processed
 
 ## Summary
 
-Pagina metodologica che descrive come Artificial Analysis benchmarka i modelli di generazione immagini su tre dimensioni: qualità, velocità e prezzo. Copre due modalità — Text to Image e Image Editing — con impostazioni standardizzate (risoluzione massima supportata, 1 immagine per prompt, aspect ratio 1:1, seed 42) e metriche derivate sia da valutazioni automatiche che da voti umani nell'Image Arena.
+Methodological page describing how Artificial Analysis benchmarks image generation models across three dimensions: quality, speed, and price. It covers two modalities — Text to Image and Image Editing — with standardized settings (maximum supported resolution, 1 image per prompt, 1:1 aspect ratio, seed 42) and metrics derived from both automatic evaluations and human votes in the Image Arena.
 
-La qualità è misurata tramite Elo derivato dai voti degli utenti nell'Image Arena (Bradley-Terry MLE), separatamente per ciascuna modalità. Velocità e prezzo sono misurati con test ripetuti 4 volte al giorno, con mediane su 14 giorni. Gli endpoint sono classificati come Standard (modello nativo a piena fedeltà) o Modified (alterato per velocità/costo).
+Quality is measured via Elo derived from user votes in the Image Arena (Bradley-Terry MLE), separately for each modality. Speed and price are measured with tests repeated 4 times per day, with medians over 14 days. Endpoints are classified as Standard (native model at full fidelity) or Modified (altered for speed/cost).
 
 ## Key points
 
-- Due modalità: Text to Image, Image Editing
-- Risoluzione massima supportata da ciascun modello, downscalata a 1024x1024 per l'Arena
-- Parametri fissi: 1 immagine per prompt, 1:1 aspect ratio, seed 42
-- Qualità: Elo da Image Arena (voti utenti, Bradley-Terry MLE)
-- Prezzo: tariffa pubblicata dal provider per immagine × 1000
-- Tempo di generazione: mediana su 14 giorni, 4 test/giorno a orari casuali, include download URL
-- Classificazione endpoint: Standard (nativo) vs Modified (ottimizzato per velocità/costo)
-- Indipendenza rigorosa: nessun compenso dai provider
+- Two modalities: Text to Image, Image Editing
+- Maximum resolution supported by each model, downscaled to 1024x1024 for the Arena
+- Fixed parameters: 1 image per prompt, 1:1 aspect ratio, seed 42
+- Quality: Elo from Image Arena (user votes, Bradley-Terry MLE)
+- Price: provider-published rate per image × 1000
+- Generation time: median over 14 days, 4 tests/day at random times, includes URL download
+- Endpoint classification: Standard (native) vs Modified (optimized for speed/cost)
+- Rigorous independence: no compensation from providers
 
 ## Entities mentioned
 
-_nessuna_
+_none_
 
 ## Concepts mentioned
 
-- [[concepts/image-arena]] — sistema di valutazione qualitativa basato su voti umani
+- [[concepts/image-arena]] — qualitative evaluation system based on human votes
 
 ## Related sources
 
-- [[sources/methodology]] — metodologia generale AA
+- [[sources/methodology]] — general AA methodology
 
 ## My notes
 
-- L'Image Arena usa la stessa filosofia delle Chatbot Arena (LMSYS): preferenze umane aggregate con Bradley-Terry
-- La classificazione Standard/Modified è importante: alcuni provider offrono versioni accelerate che sacrificano qualità
-- Il download URL incluso nel tempo di generazione rende la metrica più realistica (simula l'esperienza utente completa)
-- 1024x1024 come risoluzione standard dell'Arena permette confronti equi tra modelli con risoluzioni native diverse
+- The Image Arena uses the same philosophy as the Chatbot Arena (LMSYS): human preferences aggregated with Bradley-Terry
+- The Standard/Modified classification is important: some providers offer accelerated versions that sacrifice quality
+- Including URL download in generation time makes the metric more realistic (simulates the complete user experience)
+- 1024x1024 as the Arena's standard resolution enables fair comparisons between models with different native resolutions

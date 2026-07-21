@@ -5,21 +5,21 @@ entity_type: org
 
 # Together AI
 
-Provider di inferenza AI che ospita endpoint per modelli open-weight. Non è un Model Creator, ma un provider specializzato in hosting ad alte performance.
+AI inference provider hosting endpoints for open-weight models. Not a Model Creator, but a provider specialized in high-performance hosting.
 
 ## Mentions across sources
 
 | Source | What's said | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Citato come esempio di Provider | 2026-07-21 |
+| [[sources/methodology]] | Cited as an example of a Provider | 2026-07-21 |
 
 ## Key facts
 
-- Provider puro, specializzato in hosting di modelli open-weight
-- Appare nei grafici AA di confronto performance API provider
-- Competitor di altri provider come Fireworks, Groq, DeepInfra
+- Pure provider, specialized in hosting open-weight models
+- Appears in AA API provider performance comparison charts
+- Competitor to other providers like Fireworks, Groq, DeepInfra
 
 ## Relationships
 
-- [[concepts/model-ecosystem]] — esempio di provider puro
-- [[concepts/open-weights]] — il suo business dipende dai modelli open-weight
+- [[concepts/model-ecosystem]] — example of a pure provider
+- [[concepts/open-weights]] — its business depends on open-weight models

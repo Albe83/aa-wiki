@@ -2,23 +2,23 @@
 type: concept
 ---
 
-# Modello di Bradley-Terry
+# Bradley-Terry Model
 
-Il modello di Bradley-Terry è un metodo statistico per stimare la probabilità che un'opzione venga preferita a un'altra in confronti a coppie. Usato da Artificial Analysis per calcolare i punteggi Elo in tutte le arene (Image, Video, Music, TTS).
+The Bradley-Terry model is a statistical method for estimating the probability that one option is preferred over another in pairwise comparisons. Used by Artificial Analysis to calculate Elo scores across all arenas (Image, Video, Music, TTS).
 
-## Funzionamento
+## How it works
 
-Il modello stima un parametro di "forza" per ogni contendente. La probabilità che A sia preferito a B è:
+The model estimates a "strength" parameter for each contender. The probability that A is preferred over B is:
 
 ```
 P(A > B) = strength_A / (strength_A + strength_B)
 ```
 
-Usando la Maximum Likelihood Estimation (MLE), il modello trova i valori di strength che massimizzano la probabilità di osservare i voti reali. I punteggi vengono poi riscalati in scala Elo per leggibilità.
+Using Maximum Likelihood Estimation (MLE), the model finds strength values that maximize the probability of observing the actual votes. Scores are then rescaled to the Elo scale for readability.
 
-## Fonti in AA
+## Sources in AA
 
-AA usa Bradley-Terry in Image Arena, Video Arena, Music Arena e TTS Arena. L'intervallo di confidenza al 95% è riportato accanto a ogni punteggio Elo.
+AA uses Bradley-Terry in Image Arena, Video Arena, Music Arena, and TTS Arena. The 95% confidence interval is reported alongside each Elo score.
 
 ## Sources
 

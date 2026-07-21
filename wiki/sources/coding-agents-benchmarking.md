@@ -13,38 +13,38 @@ status: processed
 
 ## Summary
 
-Pagina metodologica che descrive il Coding Agent Index di Artificial Analysis, un benchmark che valuta i coding agent su task end-to-end di software engineering. L'indice (v1.2, Luglio 2026) aggrega 321 task distribuiti su 3 componenti: DeepSWE (113 task long-horizon), Terminal-Bench v2 (84 task di uso agentico del terminale) e SWE-Atlas-QnA (124 task di Q&A su repository). Ogni task viene eseguito 3 volte con scoring pass@1 binario.
+Methodological page describing Artificial Analysis's Coding Agent Index, a benchmark that evaluates coding agents on end-to-end software engineering tasks. The index (v1.2, July 2026) aggregates 321 tasks distributed across 3 components: DeepSWE (113 long-horizon tasks), Terminal-Bench v2 (84 agentic terminal-usage tasks), and SWE-Atlas-QnA (124 repository Q&A tasks). Each task is run 3 times with binary pass@1 scoring.
 
-Oltre alla qualità, l'indice misura metriche di efficienza: costo API per task (basato su pricing pay-per-token), utilizzo token (input, cache, cache-write, reasoning, output) e tempo di esecuzione wall-clock. La pagina documenta anche l'evoluzione dell'indice attraverso tre versioni.
+Beyond quality, the index measures efficiency metrics: API cost per task (based on pay-per-token pricing), token usage (input, cache, cache-write, reasoning, output), and wall-clock execution time. The page also documents the index's evolution through three versions.
 
 ## Key points
 
-- 321 task totali su 3 componenti: DeepSWE (113), Terminal-Bench v2 (84), SWE-Atlas-QnA (124)
-- Scoring pass@1 binario: 1 per pass, 0 per fail, media tra i 3 repeat per task
-- Indice composito: media equipesata dei pass@1 delle 3 componenti
-- Metriche di efficienza: costo API, utilizzo token, tempo di esecuzione
-- v1.2 (Luglio 2026): SWE-Atlas-QnA convertito a scoring binario
-- v1.1 (Giugno 2026): aggiunto DeepSWE, rimosso SWE-Bench-Pro-Hard-AA
-- v1.0 (Maggio 2026): prima release
-- 5 task di Terminal-Bench esclusi per incompatibilità d'ambiente
+- 321 total tasks across 3 components: DeepSWE (113), Terminal-Bench v2 (84), SWE-Atlas-QnA (124)
+- Binary pass@1 scoring: 1 for pass, 0 for fail, averaged across 3 repeats per task
+- Composite index: equally weighted average of the 3 components' pass@1
+- Efficiency metrics: API cost, token usage, execution time
+- v1.2 (July 2026): SWE-Atlas-QnA converted to binary scoring
+- v1.1 (June 2026): added DeepSWE, removed SWE-Bench-Pro-Hard-AA
+- v1.0 (May 2026): first release
+- 5 Terminal-Bench tasks excluded due to environment incompatibility
 
 ## Entities mentioned
 
-_nessuna_
+_none_
 
 ## Concepts mentioned
 
-- [[concepts/coding-agent-index]] — indice composito di coding agentico
-- [[concepts/terminal-bench]] — Terminal-Bench v2: componente di uso agentico del terminale
+- [[concepts/coding-agent-index]] — composite agentic coding index
+- [[concepts/terminal-bench]] — Terminal-Bench v2: agentic terminal-usage component
 
 ## Related sources
 
-- [[sources/methodology]] — metodologia generale AA
-- [[sources/intelligence-benchmarking]] — Intelligence Index (include Terminal-Bench)
-- [[sources/capability-indices]] — Coding Index come Skill Index separato
+- [[sources/methodology]] — general AA methodology
+- [[sources/intelligence-benchmarking]] — Intelligence Index (includes Terminal-Bench)
+- [[sources/capability-indices]] — Coding Index as a separate Skill Index
 
 ## My notes
 
-- Il Coding Agent Index è distinto dal Coding Index (Skill) dei Capability Indices: il primo valuta agent completi, il secondo valuta capacità atomiche
-- L'evoluzione rapida (3 versioni in 3 mesi) riflette la velocità del campo coding agentico
-- La metrica di costo è particolarmente rilevante: un coding agent eccellente ma proibitivamente costoso ha utilità pratica limitata
+- The Coding Agent Index is distinct from the Coding Index (Skill) of the Capability Indices: the former evaluates complete agents, the latter evaluates atomic capabilities
+- The rapid evolution (3 versions in 3 months) reflects the speed of the coding agents field
+- The cost metric is particularly relevant: an excellent but prohibitively expensive coding agent has limited practical utility

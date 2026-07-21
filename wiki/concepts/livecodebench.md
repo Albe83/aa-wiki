@@ -4,7 +4,7 @@ type: concept
 
 # LiveCodeBench
 
-LiveCodeBench: benchmark di code generation con 315 task Python. Ogni task viene eseguito 3 volte, valutato pass@1 tramite esecuzione diretta del codice.
+LiveCodeBench: code generation benchmark with 315 Python tasks. Each task is run 3 times, evaluated pass@1 via direct code execution.
 
 ## Sources
 | Source | Perspective | Date |

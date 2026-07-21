@@ -4,23 +4,23 @@ type: concept
 
 # Token
 
-Unità numeriche che rappresentano parole e caratteri su cui sono costruiti i moderni LLM. I modelli ricevono token in input e generano token in output.
+Numerical units representing words and characters on which modern LLMs are built. Models receive tokens as input and generate tokens as output.
 
 ## OpenAI Tokens vs Native Tokens
 
-| Tipo | Descrizione | Uso in AA |
+| Type | Description | Use in AA |
 |------|-------------|-----------|
-| **OpenAI Tokens** | Token prodotti dal tokenizer GPT-3.5/GPT-4 (tiktoken, o200k_base) | Unità standard per tutte le metriche di velocità (tokens/second) |
-| **Native Tokens** | Token prodotti dal tokenizer nativo di ciascun LLM | Usati per i prezzi (USD per milione di token nativi) |
+| **OpenAI Tokens** | Tokens produced by the GPT-3.5/GPT-4 tokenizer (tiktoken, o200k_base) | Standard unit for all speed metrics (tokens/second) |
+| **Native Tokens** | Tokens produced by each LLM's native tokenizer | Used for pricing (USD per million native tokens) |
 
-AA usa OpenAI Tokens come unità standard per permettere confronti equi tra modelli con tokenizer diversi. Un modello con tokenizer "avaro" (che produce meno token per lo stesso testo) apparirebbe artificialmente più veloce se misurato in native tokens.
+AA uses OpenAI Tokens as the standard unit to enable fair comparisons between models with different tokenizers. A model with a "stingy" tokenizer (producing fewer tokens for the same text) would appear artificially faster if measured in native tokens.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Definizione ufficiale AA di Token, OpenAI Tokens, Native Tokens | 2026-07-21 |
+| [[sources/methodology]] | Official AA definition of Token, OpenAI Tokens, Native Tokens | 2026-07-21 |
 
 ## Current synthesis
 
-La doppia unità di misura (OpenAI tokens per speed, native tokens per price) è una scelta pragmatica: permette confronti fair senza forzare tutti i provider a usare lo stesso tokenizer.
+The dual unit of measurement (OpenAI tokens for speed, native tokens for price) is a pragmatic choice: it enables fair comparisons without forcing all providers to use the same tokenizer.

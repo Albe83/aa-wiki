@@ -13,46 +13,46 @@ status: processed
 
 ## Summary
 
-Pagina metodologica che descrive i Capability Indices di Artificial Analysis, metriche composite che misurano la performance dei modelli su specifici casi d'uso e industrie. Si dividono in due categorie: Skill Indices (competenze cross-dominio) e Industry Indices (professioni specifiche). Gli Skill Indices usano una media equipesata dei componenti, mentre gli Industry Indices pesano i componenti in base alla frequenza reale dei task professionali (secondo una tassonomia O*NET).
+Methodological page describing Artificial Analysis's Capability Indices, composite metrics that measure model performance on specific use cases and industries. They fall into two categories: Skill Indices (cross-domain competencies) and Industry Indices (specific professions). Skill Indices use an equally weighted average of components, while Industry Indices weight components based on real-world professional task frequency (according to an O*NET taxonomy).
 
-La pagina elenca 8 indici: 2 Skill (Agentic, Coding) e 6 Industry (Finance & Accounting, Strategy & Ops, Legal, Healthcare & Medical, Engineering, Economics). Ogni indice è scomposto nei suoi componenti con i relativi pesi percentuali, tutti derivati dalle valutazioni dell'Intelligence Index.
+The page lists 8 indices: 2 Skill (Agentic, Coding) and 6 Industry (Finance & Accounting, Strategy & Ops, Legal, Healthcare & Medical, Engineering, Economics). Each index is broken down into its components with their percentage weights, all derived from Intelligence Index evaluations.
 
 ## Key points
 
-- 2 Skill Indices: Agentic Index (GDPval-AA v2 + τ³-Banking) e Coding Index (Terminal-Bench v2.1 + SciCode)
+- 2 Skill Indices: Agentic Index (GDPval-AA v2 + τ³-Banking) and Coding Index (Terminal-Bench v2.1 + SciCode)
 - 6 Industry Indices: Finance, Strategy & Ops, Legal, Healthcare, Engineering, Economics
-- Gli Industry Indices pesano i componenti per frequenza reale dei task, non equamente
-- AA-Omniscience è il componente più trasversale: compare in tutti e 6 gli Industry Indices
-- GDPval-AA v2 compare in tutti gli indici tranne il Coding Index
-- τ³-Banking compare in 6 degli 8 indici
-- HLE compare in 5 indici come fonte di ragionamento generale
-- AA-LCR compare in 4 indici (Finance, Strategy & Ops, Legal, Economics)
+- Industry Indices weight components by real task frequency, not equally
+- AA-Omniscience is the most cross-cutting component: it appears in all 6 Industry Indices
+- GDPval-AA v2 appears in all indices except the Coding Index
+- τ³-Banking appears in 6 of the 8 indices
+- HLE appears in 5 indices as a source of general reasoning
+- AA-LCR appears in 4 indices (Finance, Strategy & Ops, Legal, Economics)
 
 ## Entities mentioned
 
-_nessuna_
+_none_
 
 ## Concepts mentioned
 
-- [[concepts/capability-indices]] — definizione e struttura degli indici di capacità
-- [[concepts/intelligence-index]] — fonte delle valutazioni componenti
-- [[concepts/gdpval-aa]] — componente di knowledge work agentico
-- [[concepts/tau3-banking]] — componente di interazione clienti agentica
-- [[concepts/terminal-bench]] — componente di coding agentico
-- [[concepts/scicode]] — componente di generazione codice scientifico
-- [[concepts/aa-omniscience]] — componente di conoscenza e non-allucinazione
-- [[concepts/humanitys-last-exam]] — componente di ragionamento
-- [[concepts/aa-lcr]] — componente di long-context reasoning
-- [[concepts/ifbench]] — componente di instruction following
+- [[concepts/capability-indices]] — definition and structure of capability indices
+- [[concepts/intelligence-index]] — source of component evaluations
+- [[concepts/gdpval-aa]] — agentic knowledge work component
+- [[concepts/tau3-banking]] — agentic customer interaction component
+- [[concepts/terminal-bench]] — agentic coding component
+- [[concepts/scicode]] — scientific code generation component
+- [[concepts/aa-omniscience]] — knowledge and anti-hallucination component
+- [[concepts/humanitys-last-exam]] — reasoning component
+- [[concepts/aa-lcr]] — long-context reasoning component
+- [[concepts/ifbench]] — instruction following component
 
 ## Related sources
 
-- [[sources/methodology]] — metodologia generale AA
-- [[sources/intelligence-benchmarking]] — Intelligence Index da cui derivano tutti i componenti
+- [[sources/methodology]] — general AA methodology
+- [[sources/intelligence-benchmarking]] — Intelligence Index from which all components are derived
 
 ## My notes
 
-- La distinzione Skill vs Industry è fondamentale: gli Skill Index sono cross-dominio e equipesati, gli Industry Index sono tarati su frequenze reali di task professionali
-- AA-Omniscience è il mattone più versatile: conoscenza settoriale + metrica di allucinazione in un unico benchmark
-- Engineering Index è il più pesante sul ragionamento (35% tra HLE, GPQA Diamond e CritPt)
-- Strategy & Ops è l'unico indice dove τ³-Banking pesa tanto quanto GDPval-AA v2 (30% ciascuno)
+- The Skill vs Industry distinction is fundamental: Skill Indices are cross-domain and equally weighted, Industry Indices are calibrated to real professional task frequencies
+- AA-Omniscience is the most versatile building block: sector knowledge + hallucination metric in a single benchmark
+- The Engineering Index is the most reasoning-heavy (35% across HLE, GPQA Diamond, and CritPt)
+- Strategy & Ops is the only index where τ³-Banking has equal weight to GDPval-AA v2 (30% each)

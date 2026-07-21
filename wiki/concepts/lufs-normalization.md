@@ -4,23 +4,23 @@ type: concept
 
 # LUFS Normalization
 
-Standard di normalizzazione del volume audio usato da Artificial Analysis nella Music Arena. LUFS (Loudness Units relative to Full Scale) misura il loudness percepito secondo lo standard ITU-R BS.1770.
+Audio loudness normalization standard used by Artificial Analysis in the Music Arena. LUFS (Loudness Units relative to Full Scale) measures perceived loudness according to the ITU-R BS.1770 standard.
 
-## Applicazione nella Music Arena
+## Application in the Music Arena
 
-Prima di entrare nella Music Arena, ogni traccia viene normalizzata:
+Before entering the Music Arena, each track is normalized:
 - **Target:** -16 LUFS integrated loudness
-- **Metodo:** singolo guadagno statico (no compressione, limiting o EQ)
-- **Ceiling:** -1 dBTP true-peak — se la traccia non ha abbastanza headroom, si ferma sotto il target
-- **Formato finale:** 320 kbps MP3, 44.1 kHz
+- **Method:** single static gain (no compression, limiting, or EQ)
+- **Ceiling:** -1 dBTP true-peak — if the track lacks sufficient headroom, it stops below the target
+- **Final format:** 320 kbps MP3, 44.1 kHz
 
-Questo assicura che i voti nella Music Arena riflettano la qualità musicale, non differenze di volume.
+This ensures that Music Arena votes reflect musical quality, not volume differences.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/music-methodology]] | Dettaglio della normalizzazione audio nella Music Arena | 2026-07-21 |
+| [[sources/music-methodology]] | Audio normalization detail in the Music Arena | 2026-07-21 |
 
 ## Relationships
-- [[concepts/music-arena]] — la normalizzazione LUFS è un passaggio obbligatorio prima del voting
+- [[concepts/music-arena]] — LUFS normalization is a mandatory step before voting

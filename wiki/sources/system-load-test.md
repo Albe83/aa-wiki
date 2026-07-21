@@ -13,36 +13,36 @@ status: processed
 
 ## Summary
 
-Pagina metodologica che descrive l'AA-SLT (System Load Test), il benchmark di Artificial Analysis per misurare le performance di sistema sotto carico sostenuto. A differenza dei benchmark di performance API standard che misurano prompt singoli o batch fissi, l'AA-SLT mantiene un numero costante di query parallele: quando una finisce, un'altra parte immediatamente, garantendo carico stabile con varianza minima.
+Methodological page describing the AA-SLT (System Load Test), Artificial Analysis's benchmark for measuring system performance under sustained load. Unlike standard API performance benchmarks that measure single prompts or fixed batches, the AA-SLT maintains a constant number of parallel queries: when one finishes, another starts immediately, ensuring stable load with minimal variance.
 
-Il test procede per fasi di 3 minuti a concorrenza crescente (1, 2, 4, 8, 16, 32, 64, poi incrementi di 64) fino a raggiungere il throughput massimo del sistema. Ogni query usa 1.000 token input e 1.000 token output con streaming abilitato. Le metriche chiave sono throughput aggregato, tasso di risposta, latenza end-to-end e output speed per query.
+The test proceeds in 3-minute phases at increasing concurrency (1, 2, 4, 8, 16, 32, 64, then +64 increments) until reaching the system's maximum throughput. Each query uses 1,000 input tokens and 1,000 output tokens with streaming enabled. Key metrics are aggregate throughput, response rate, end-to-end latency, and output speed per query.
 
 ## Key points
 
-- Carico sostenuto: query rimpiazzate immediatamente al completamento per mantenere concorrenza costante
-- Fasi di 3 minuti a concorrenza crescente: 1, 2, 4, 8, 16, 32, 64, poi +64
-- Workload standardizzato: 1.000 token input, 1.000 token output, streaming abilitato
-- 4 metriche chiave: System Output Throughput, Response Rate, End-to-End Latency, Output Speed per Query
-- Il test scala fino a saturazione del sistema per trovare il throughput ceiling
-- Approccio a fasi con ramp-up e cool-down esclusi dalle misurazioni
+- Sustained load: queries replaced immediately upon completion to maintain constant concurrency
+- 3-minute phases at increasing concurrency: 1, 2, 4, 8, 16, 32, 64, then +64
+- Standardized workload: 1,000 input tokens, 1,000 output tokens, streaming enabled
+- 4 key metrics: System Output Throughput, Response Rate, End-to-End Latency, Output Speed per Query
+- Test scales until system saturation to find the throughput ceiling
+- Phased approach with ramp-up and cool-down excluded from measurements
 
 ## Entities mentioned
 
-_nessuna_
+_none_
 
 ## Concepts mentioned
 
-- [[concepts/aa-slt]] — benchmark di carico sistema di Artificial Analysis
-- [[concepts/output-speed]] — metriche di output speed e latenza sotto carico
+- [[concepts/aa-slt]] — Artificial Analysis system load benchmark
+- [[concepts/output-speed]] — output speed and latency metrics under load
 
 ## Related sources
 
-- [[sources/methodology]] — metodologia generale AA
-- [[sources/performance-benchmarking]] — benchmark di performance API standard (carico singolo e parallelo)
-- [[sources/agentperf]] — benchmark hardware per carichi agentici sostenuti
+- [[sources/methodology]] — general AA methodology
+- [[sources/performance-benchmarking]] — standard API performance benchmarks (single and parallel load)
+- [[sources/agentperf]] — hardware benchmark for sustained agentic workloads
 
 ## My notes
 
-- L'AA-SLT è complementare ai benchmark di performance standard: quelli misurano l'esperienza del singolo utente, questo misura la capacità del sistema
-- La metodologia a "query rimpiazzate" è più realistica di un batch fisso perché simula un flusso continuo di utenti
-- Interessante il confronto con agentperf: entrambi misurano carico, ma AA-SLT è per API serverless, agentperf per deployment dedicati
+- AA-SLT is complementary to standard performance benchmarks: those measure single-user experience, this measures system capacity
+- The "replaced query" methodology is more realistic than a fixed batch because it simulates a continuous user flow
+- Interesting comparison with agentperf: both measure load, but AA-SLT is for serverless APIs, agentperf for dedicated deployments

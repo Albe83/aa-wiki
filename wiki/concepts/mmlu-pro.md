@@ -4,7 +4,7 @@ type: concept
 
 # MMLU-Pro
 
-MMLU-Pro: 12.032 domande a scelta multipla con 10 opzioni ciascuna. Estrazione tramite regex, valutazione pass@1.
+MMLU-Pro: 12,032 multiple-choice questions with 10 options each. Regex extraction, pass@1 evaluation.
 
 ## Sources
 | Source | Perspective | Date |

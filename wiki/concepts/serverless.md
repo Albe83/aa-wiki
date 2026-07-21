@@ -2,20 +2,20 @@
 type: concept
 ---
 
-# Serverless (nel contesto LLM)
+# Serverless (in the LLM context)
 
-Servizio cloud fornito su base pay-per-use. Nel contesto delle API di inferenza LLM, significa generalmente prezzo per token di input e output, senza tariffa fissa per l'accesso al sistema.
+Cloud service provided on a pay-per-use basis. In the context of LLM inference APIs, it generally means price per input and output token, with no fixed fee for system access.
 
-## Nota terminologica
+## Terminological note
 
-AA sottolinea che i prodotti cloud serverless funzionano comunque su server fisici. Il termine indica solo il modello di pricing, non l'assenza di infrastruttura.
+AA emphasizes that serverless cloud products still run on physical servers. The term refers only to the pricing model, not the absence of infrastructure.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Definizione ufficiale AA di Serverless | 2026-07-21 |
+| [[sources/methodology]] | Official AA definition of Serverless | 2026-07-21 |
 
 ## Current synthesis
 
-La definizione serverless di AA è operativa: serve a distinguere gli endpoint pay-per-token (la maggioranza) da eventuali sistemi a canone fisso. Praticamente tutti gli endpoint tracciati da AA sono serverless.
+AA's serverless definition is operational: it serves to distinguish pay-per-token endpoints (the majority) from any fixed-fee systems. Virtually all endpoints tracked by AA are serverless.

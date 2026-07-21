@@ -5,21 +5,21 @@ entity_type: org
 
 # Meta
 
-Meta AI, divisione AI di Meta (Facebook). Creatore dei modelli open-weight Llama e Muse Spark.
+Meta AI, the AI division of Meta (Facebook). Creator of the Llama and Muse Spark open-weight models.
 
 ## Mentions across sources
 
 | Source | What's said | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Citato come esempio di Model Creator (Llama 3) | 2026-07-21 |
+| [[sources/methodology]] | Cited as an example of a Model Creator (Llama 3) | 2026-07-21 |
 
 ## Key facts
 
-- Principale produttore di modelli open-weight di fascia alta
-- I modelli Llama sono tra i più benchmarkati su AA nella sezione API Provider Performance (confronto tra provider terzi)
+- Leading producer of high-end open-weight models
+- Llama models are among the most benchmarked on AA in the API Provider Performance section (comparison between third-party providers)
 
 ## Relationships
 
-- [[concepts/open-weights]] — Meta è l'esempio archetipico di modello open-weight
-- [[entities/orgs/mistral]] — altro produttore europeo di open-weight
-- [[entities/orgs/deepseek]] — competitor cinese open-weight
+- [[concepts/open-weights]] — Meta is the archetypal example of an open-weight model
+- [[entities/orgs/mistral]] — another European open-weight producer
+- [[entities/orgs/deepseek]] — Chinese open-weight competitor

@@ -2,39 +2,39 @@
 type: concept
 ---
 
-# Output Speed e Metriche di Performance
+# Output Speed and Performance Metrics
 
-Metriche di performance per API di inferenza LLM definite da Artificial Analysis.
+Performance metrics for LLM inference APIs defined by Artificial Analysis.
 
-## Definizioni
+## Definitions
 
 ### Time to First Token (TTFT)
-Tempo (secondi) tra l'invio della richiesta e la ricezione del primo token. Per i reasoning models, è il primo token di reasoning.
+Time (seconds) between sending the request and receiving the first token. For reasoning models, this is the first reasoning token.
 
 ### Time to First Answer Token
-Tempo (secondi) tra l'invio della richiesta e il primo token di risposta (dopo l'eventuale fase di reasoning).
+Time (seconds) between sending the request and the first response token (after any reasoning phase).
 
 ### Output Speed (output tokens per second)
-Numero medio di token ricevuti al secondo, dopo la ricezione del primo token. Misurato in OpenAI tokens.
+Average number of tokens received per second, after receiving the first token. Measured in OpenAI tokens.
 
 ### Total Response Time for 100 Output Tokens
-Tempo per generare 100 token di output, calcolato sinteticamente da TTFT + Output Speed.
+Time to generate 100 output tokens, computed synthetically from TTFT + Output Speed.
 
 ### End-to-End Response Time
-Tempo totale per ricevere una risposta completa, includendo input processing, reasoning e generazione della risposta.
+Total time to receive a complete response, including input processing, reasoning, and response generation.
 
 ### Average Reasoning Tokens
-Numero medio di token di reasoning prodotti dai reasoning models prima della risposta. Calcolato su 60 prompt vari (personali, commerciali, coding, math, scienza) da MMLU Pro, AIME 2025, LiveCodeBench. Se non disponibile, si assume 2k reasoning tokens.
+Average number of reasoning tokens produced by reasoning models before the response. Computed over 60 varied prompts (personal, commercial, coding, math, science) from MMLU Pro, AIME 2025, LiveCodeBench. If unavailable, 2k reasoning tokens are assumed.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Definizioni ufficiali AA delle metriche di performance | 2026-07-21 |
+| [[sources/methodology]] | Official AA definitions of performance metrics | 2026-07-21 |
 
 ## Current synthesis
 
-Le metriche AA misurano l'esperienza reale dell'utente, non il throughput massimo teorico. La distinzione tra TTFT e Time to First Answer Token è particolarmente rilevante per i reasoning models, dove la fase di "thinking" può durare secondi prima che inizi la risposta vera e propria.
+AA metrics measure real user experience, not maximum theoretical throughput. The distinction between TTFT and Time to First Answer Token is especially relevant for reasoning models, where the "thinking" phase can last seconds before the actual response begins.
 
 ## Relationships
-- [[concepts/token]] — le metriche di velocità usano OpenAI Tokens come unità standard
+- [[concepts/token]] — speed metrics use OpenAI Tokens as the standard unit

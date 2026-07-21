@@ -4,7 +4,7 @@ type: concept
 
 # Harvey LAB-AA
 
-Implementazione AA dell'Harvey Legal Agent Benchmark: 120 task privati in 24 aree di pratica legale. Produce deliverable legali (memo, disclosure schedule, deposition summary). Valutazione criterio-per-criterio con rubric grading da un singolo LLM judge. Utilizza l'harness Stirrup, 200 turni.
+AA implementation of the Harvey Legal Agent Benchmark: 120 private tasks across 24 legal practice areas. Produces legal deliverables (memo, disclosure schedule, deposition summary). Criterion-by-criterion evaluation with rubric grading by a single LLM judge. Uses the Stirrup harness, 200 turns.
 
 ## Sources
 | Source | Perspective | Date |

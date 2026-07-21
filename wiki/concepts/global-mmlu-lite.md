@@ -4,7 +4,7 @@ type: concept
 
 # Global-MMLU-Lite
 
-Global-MMLU-Lite: benchmark multilingue con ~6.000 domande (~400 per lingua, 16 lingue), 4 opzioni a scelta multipla. Estrazione regex, pass@1. Alimenta l'AA Multilingual Index.
+Global-MMLU-Lite: multilingual benchmark with ~6,000 questions (~400 per language, 16 languages), 4 multiple-choice options. Regex extraction, pass@1. Powers the AA Multilingual Index.
 
 ## Sources
 | Source | Perspective | Date |

@@ -2,32 +2,32 @@
 type: concept
 ---
 
-# Model Ecosystem (Modello, Creatore, Endpoint, Provider, Sistema)
+# Model Ecosystem (Model, Creator, Endpoint, Provider, System)
 
-Distinzioni terminologiche fondamentali nell'ecosistema dei modelli linguistici, come definite da Artificial Analysis.
+Core terminological distinctions in the language model ecosystem, as defined by Artificial Analysis.
 
-## Definizioni
+## Definitions
 
-| Termine | Definizione | Esempio |
-|---------|-------------|---------|
-| **Model** | Un large language model (LLM), proprietario o open weights | GPT-4, Llama 3, Claude |
-| **Model Creator** | L'organizzazione che ha sviluppato e addestrato il modello | OpenAI per GPT-4, Meta per Llama 3 |
-| **Endpoint** | Un'istanza hosted di un modello accessibile via API | GPT-4 su Azure, Llama 3 su Together |
-| **System** | Ambiente di calcolo dedicato (es. VM) per eseguire modelli AI | VM con GPU per inference on-premise |
-| **Provider** | Azienda che ospita e fornisce accesso a endpoint o sistemi | OpenAI, AWS Bedrock, Together.ai |
+| Term | Definition | Example |
+|------|------------|---------|
+| **Model** | A large language model (LLM), proprietary or open weights | GPT-4, Llama 3, Claude |
+| **Model Creator** | The organization that developed and trained the model | OpenAI for GPT-4, Meta for Llama 3 |
+| **Endpoint** | A hosted instance of a model accessible via API | GPT-4 on Azure, Llama 3 on Together |
+| **System** | Dedicated compute environment (e.g. VM) for running AI models | VM with GPU for on-premise inference |
+| **Provider** | Company that hosts and provides access to endpoints or systems | OpenAI, AWS Bedrock, Together.ai |
 
-## Relazioni
+## Relationships
 
-- Uno stesso modello può avere endpoint multipli su provider diversi
-- Un'azienda è spesso sia Model Creator che Provider (es. OpenAI, Google)
-- I provider terze parti ospitano modelli open weights creati da altri (es. DeepInfra, Fireworks)
+- A single model can have multiple endpoints across different providers
+- A company is often both Model Creator and Provider (e.g. OpenAI, Google)
+- Third-party providers host open weights models created by others (e.g. DeepInfra, Fireworks)
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Definizioni ufficiali AA dei termini dell'ecosistema | 2026-07-21 |
+| [[sources/methodology]] | Official AA definitions of ecosystem terms | 2026-07-21 |
 
 ## Current synthesis
 
-La distinzione Model/Endpoint/Provider è essenziale per interpretare correttamente i grafici AA. Quando AA confronta le performance API di un modello open-weight, mostra la varianza tra provider (output speed e prezzo possono differire drasticamente). Quando mostra l'Intelligence Index, il valore è unico per modello (l'intelligenza non cambia col provider).
+The Model/Endpoint/Provider distinction is essential for correctly interpreting AA charts. When AA compares the API performance of an open-weight model, it shows the variance across providers (output speed and price can differ drastically). When showing the Intelligence Index, the value is unique per model (intelligence does not change with the provider).

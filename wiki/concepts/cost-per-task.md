@@ -2,40 +2,40 @@
 type: concept
 ---
 
-# Cost per Task e Pricing
+# Cost per Task and Pricing
 
-Metrica di costo sviluppata da Artificial Analysis per confrontare il costo reale dell'uso dei modelli.
+Cost metric developed by Artificial Analysis to compare the real cost of using models.
 
-## Definizioni
+## Definitions
 
 ### Price (Input/Output)
-Il prezzo applicato da un provider per token di input inviato e per token di output ricevuto. I prezzi sono quelli correnti dichiarati dai provider.
+The price charged by a provider per input token sent and per output token received. Prices are the currently declared provider rates.
 
 ### Blended Price
-Prezzo combinato che assume un rapporto 7:2:1 di cache hit, input e output token, per facilitare il confronto.
+Combined price assuming a 7:2:1 ratio of cache hit, input, and output tokens, to facilitate comparison.
 
 ### Cost per Task
-Costo medio pesato (USD) per completare un task dell'Intelligence Index. Si calcola:
+Weighted average cost (USD) to complete an Intelligence Index task. Calculated as:
 
 ```
 Cost per Task = Σ (prezzo_input × token_input + prezzo_cache × token_cache + prezzo_output × token_output) × peso_benchmark / numero_task
 ```
 
-Il costo riflette l'effettivo consumo di token: modelli che producono risposte più lunghe o più reasoning token hanno un costo per task più alto, anche a parità di prezzo per token.
+The cost reflects actual token consumption: models that produce longer responses or more reasoning tokens have a higher cost per task, even at the same per-token price.
 
 ### Cost to Run Intelligence Index
-Costo totale (USD) per eseguire tutte le valutazioni dell'Intelligence Index, calcolato sui prezzi del provider first-party.
+Total cost (USD) to run all Intelligence Index evaluations, calculated at first-party provider prices.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Definizioni ufficiali AA di pricing e costo | 2026-07-21 |
+| [[sources/methodology]] | Official AA pricing and cost definitions | 2026-07-21 |
 
 ## Current synthesis
 
-Il Cost per Task è la metrica più realistica per confrontare il costo dei modelli perché incorpora la verbosità. Due modelli con lo stesso prezzo per token possono avere Cost per Task molto diversi se uno produce risposte più lunghe.
+Cost per Task is the most realistic metric for comparing model costs because it incorporates verbosity. Two models with the same per-token price can have very different Cost per Task if one produces longer responses.
 
 ## Relationships
-- [[concepts/blended-price]] — il rapporto 7:2:1 usato per il calcolo del prezzo combinato
-- [[concepts/cache-pricing]] — dettaglio sui modelli di pricing della cache per provider
+- [[concepts/blended-price]] — the 7:2:1 ratio used for blended price calculation
+- [[concepts/cache-pricing]] — detail on cache pricing models by provider

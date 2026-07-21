@@ -4,26 +4,26 @@ type: concept
 
 # Model Selection Framework
 
-Processo decisionale raccomandato da Artificial Analysis per scegliere modelli e provider API.
+Decision-making process recommended by Artificial Analysis for choosing models and API providers.
 
-## I tre passi
+## The three steps
 
-1. **Partire dallo use-case** — Identificare quali dimensioni ottimizzare: qualità, velocità, prezzo, latenza, context window. Esempio: un sito consumer a basso ARPU privilegia velocità e prezzo basso sulla qualità massima.
+1. **Start from the use case** — Identify which dimensions to optimize: quality, speed, price, latency, context window. Example: a low-ARPU consumer site prioritizes speed and low price over maximum quality.
 
-2. **Scegliere il modello** — Usare l'[[concepts/intelligence-index|Intelligence Index]] come indicatore generalista, poi sviluppare una short-list di modelli candidati da testare sullo use-case specifico. I test custom sono essenziali: i benchmark AA indicano la direzione ma non sostituiscono la validazione.
+2. **Choose the model** — Use the [[concepts/intelligence-index|Intelligence Index]] as a generalist indicator, then develop a shortlist of candidate models to test on the specific use case. Custom testing is essential: AA benchmarks point the way but do not replace validation.
 
-3. **Scegliere il provider** — Una volta scelto il modello, confrontare i provider su: prezzo, throughput, latenza, compatibilità OpenAI, rate limits, context window. Le performance tra provider possono variare significativamente.
+3. **Choose the provider** — Once the model is chosen, compare providers on: price, throughput, latency, OpenAI compatibility, rate limits, context window. Performance between providers can vary significantly.
 
-## Razionale
+## Rationale
 
-Modelli e provider presentano trade-off inevitabili. L'ordine use-case → modello → provider evita di vincolarsi a un provider prima di aver identificato il modello giusto, dato che i provider non ospitano tutti i modelli.
+Models and providers present inevitable trade-offs. The use case → model → provider order avoids locking into a provider before identifying the right model, since providers do not host all models.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/guide]] | Framework ufficiale AA per la selezione di modelli e provider | 2026-07-21 |
+| [[sources/guide]] | Official AA framework for model and provider selection | 2026-07-21 |
 
 ## Current synthesis
 
-Il framework è il principio organizzatore dell'intero sito AA. Ogni grafico e leaderboard è progettato per supportare uno di questi tre passi decisionali.
+The framework is the organizing principle of the entire AA site. Every chart and leaderboard is designed to support one of these three decision steps.

@@ -13,40 +13,40 @@ status: processed
 
 ## Summary
 
-Pagina metodologica che descrive AA-AgentPerf, il benchmark hardware di Artificial Analysis che misura quanti agenti attivi un deployment di inferenza può supportare simultaneamente, rispettando SLO (Service Level Objectives) di performance per agente. A differenza dei benchmark API che misurano prompt isolati, AgentPerf usa traiettorie agentiche reali multi-turno con ragionamento interleaved, tool call e contesto variabile.
+Methodological page describing AA-AgentPerf, Artificial Analysis's hardware benchmark that measures how many active agents an inference deployment can support simultaneously while meeting SLOs (Service Level Objectives) for agent performance. Unlike API benchmarks that measure isolated prompts, AgentPerf uses real multi-turn agentic trajectories with interleaved reasoning, tool calls, and variable context.
 
-Il benchmark definisce SLO tier derivati dai dati di benchmarking API serverless di AA, con soglie diverse per modelli diversi. Usa un dataset di traiettorie reali raccolte con l'harness OpenCode (DeepSeek V3.2, GLM 4.7, Kimi K2.5), con input tra ~5K e 131K token. Il test usa binary search dopo ramp esponenziale, con ogni fase di almeno 10 minuti a regime. I risultati sono normalizzati per acceleratore, per sistema e per MW.
+The benchmark defines SLO tiers derived from AA's serverless API benchmarking data, with different thresholds for different models. It uses a dataset of real trajectories collected with the OpenCode harness (DeepSeek V3.2, GLM 4.7, Kimi K2.5), with inputs ranging from ~5K to 131K tokens. The test uses binary search after exponential ramp-up, with each phase lasting at least 10 minutes at steady state. Results are normalized per accelerator, per system, and per MW.
 
 ## Key points
 
-- Misura agenti attivi supportabili, non throughput di token grezzo
-- Traiettorie agentiche reali multi-turno: coding session con tool call e contesto variabile
-- SLO tier derivati dal mercato: basati sulle performance osservate nelle API serverless AA
-- 2 modelli di riferimento con tier diversi: DeepSeek V4 Pro (max) con 3 tier, gpt-oss-120b (high) con 4 tier
-- Dataset da OpenCode harness: input ~5K-131K token (media ~27K), 12+ linguaggi
-- Tool call delay realistici: 0.1s-5s (mediana ~1s)
-- Binary search dopo ramp esponenziale; ≥30 traiettorie completate per fase
-- Normalizzazione multi-livello: per acceleratore, sistema, MW
-- Continuamente aggiornato con nuovo hardware/software
+- Measures supportable active agents, not raw token throughput
+- Real multi-turn agentic trajectories: coding sessions with tool calls and variable context
+- SLO tiers derived from the market: based on performance observed in AA serverless APIs
+- 2 reference models with different tiers: DeepSeek V4 Pro (max) with 3 tiers, gpt-oss-120b (high) with 4 tiers
+- Dataset from OpenCode harness: input ~5K-131K tokens (mean ~27K), 12+ languages
+- Realistic tool call delays: 0.1s-5s (median ~1s)
+- Binary search after exponential ramp-up; ≥30 trajectories completed per phase
+- Multi-level normalization: per accelerator, system, MW
+- Continuously updated with new hardware/software
 
 ## Entities mentioned
 
-_nessuna_
+_none_
 
 ## Concepts mentioned
 
-- [[concepts/aa-agentperf]] — benchmark hardware per deployment agentici
-- [[concepts/output-speed]] — metriche SLO: P25 Output Speed e P95 TTFT
+- [[concepts/aa-agentperf]] — hardware benchmark for agentic deployments
+- [[concepts/output-speed]] — SLO metrics: P25 Output Speed and P95 TTFT
 
 ## Related sources
 
-- [[sources/methodology]] — metodologia generale AA
-- [[sources/performance-benchmarking]] — benchmark di performance API da cui derivano gli SLO tier
-- [[sources/system-load-test]] — benchmark di carico sistema complementare
+- [[sources/methodology]] — general AA methodology
+- [[sources/performance-benchmarking]] — API performance benchmark from which SLO tiers are derived
+- [[sources/system-load-test]] — complementary system load benchmark
 
 ## My notes
 
-- AgentPerf colma il gap tra benchmark API (esperienza singolo utente) e benchmark di sistema (throughput grezzo): misura capacità agentica reale
-- L'uso di traiettorie reali (non sintetiche) con tool call delay realistici è un punto di forza metodologico
-- La normalizzazione per MW permette confronti di efficienza energetica tra deployment
-- I SLO tier differenziati per modello riflettono che le aspettative di performance dipendono dal modello usato
+- AgentPerf bridges the gap between API benchmarks (single-user experience) and system benchmarks (raw throughput): it measures real agentic capacity
+- Using real trajectories (not synthetic) with realistic tool call delays is a methodological strength
+- Per-MW normalization enables energy efficiency comparisons across deployments
+- Differentiated SLO tiers per model reflect that performance expectations depend on the model used

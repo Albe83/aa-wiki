@@ -4,25 +4,25 @@ type: concept
 
 # Open Weights
 
-Modelli i cui pesi sono stati rilasciati pubblicamente dal creatore. Artificial Analysis usa "open weights" (o "open") anziché "open-source" perché molti LLM aperti sono rilasciati con licenze che non soddisfano la definizione completa di software open-source (es. restrizioni sull'uso commerciale).
+Models whose weights have been publicly released by the creator. Artificial Analysis uses "open weights" (or "open") rather than "open-source" because many open LLMs are released with licenses that do not meet the full definition of open-source software (e.g. restrictions on commercial use).
 
-## Classificazione AA
+## AA Classification
 
-Nei grafici AA i modelli sono suddivisi in:
-- **Proprietary**: pesi non rilasciati, accesso solo via API del creatore
-- **Open Weights**: pesi pubblici, utilizzabili liberamente
-- **Open Weights (Commercial Use Restricted)**: pesi pubblici ma uso commerciale limitato (tipicamente richiede licenza a pagamento)
+In AA charts, models are divided into:
+- **Proprietary**: weights not released, access only via the creator's API
+- **Open Weights**: public weights, freely usable
+- **Open Weights (Commercial Use Restricted)**: public weights but restricted commercial use (typically requires a paid license)
 
-## Fonti di performance per open weights
+## Performance sources for open weights
 
-Per i modelli open weights, AA mostra tipicamente la mediana tra tutti i provider che li ospitano, non il dato di un singolo provider. Questo è rilevante perché speed e prezzo variano significativamente tra provider.
+For open weights models, AA typically shows the median across all providers that host them, not the data from a single provider. This is relevant because speed and price vary significantly between providers.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Definizione ufficiale AA di Open Weights | 2026-07-21 |
+| [[sources/methodology]] | Official AA definition of Open Weights | 2026-07-21 |
 
 ## Relationships
-- [[concepts/model-ecosystem]] — gli open weights permettono a provider terzi di creare endpoint
-- [[concepts/openness-index]] — l'Openness Index valuta anche trasparenza di dati e metodologia
+- [[concepts/model-ecosystem]] — open weights allow third-party providers to create endpoints
+- [[concepts/openness-index]] — the Openness Index also evaluates data and methodology transparency

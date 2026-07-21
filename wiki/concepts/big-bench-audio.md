@@ -4,7 +4,7 @@ type: concept
 
 # Big Bench Audio
 
-Big Bench Audio: 1.000 domande audio tratte da Big Bench Hard (Formal Fallacies, Navigate, Object Counting, Web of Lies). Generate con 23 voci TTS sintetiche. Utilizzato nell'AA Speech-to-Speech Index (peso 33.3%).
+Big Bench Audio: 1,000 audio questions drawn from Big Bench Hard (Formal Fallacies, Navigate, Object Counting, Web of Lies). Generated with 23 synthetic TTS voices. Used in the AA Speech-to-Speech Index (33.3% weight).
 
 ## Sources
 | Source | Perspective | Date |

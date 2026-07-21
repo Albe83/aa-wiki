@@ -4,7 +4,7 @@ type: concept
 
 # ITBench-AA
 
-ITBench-AA: 59 scenari Kubernetes di root-cause analysis, 3 ripetizioni. Diagnosi strutturata in JSON da snapshot offline di cluster K8s. Entity matching normalizzato da LLM, average precision at full recall.
+ITBench-AA: 59 Kubernetes root-cause analysis scenarios, 3 repeats. Structured JSON diagnosis from offline K8s cluster snapshots. LLM-normalized entity matching, average precision at full recall.
 
 ## Sources
 | Source | Perspective | Date |

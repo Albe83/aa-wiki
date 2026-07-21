@@ -4,7 +4,7 @@ type: concept
 
 # EnterpriseOps-Gym-AA
 
-EnterpriseOps-Gym-AA: 1.117 task oracle su 8 domini, 3 ripetizioni. Uso multi-turn di strumenti MCP contro server enterprise gym resettabili. Verifica outcome-based tramite SQL state verifier, strict pass@1.
+EnterpriseOps-Gym-AA: 1,117 oracle tasks across 8 domains, 3 repeats. Multi-turn use of MCP tools against resettable enterprise gym servers. Outcome-based verification via SQL state verifier, strict pass@1.
 
 ## Sources
 | Source | Perspective | Date |

@@ -4,7 +4,7 @@ type: concept
 
 # APEX-Agents-AA
 
-APEX-Agents-AA: 452 task agentici long-horizon, 3 ripetizioni. Completamento di task di professional-service con rubric-based grading su file locali.
+APEX-Agents-AA: 452 long-horizon agentic tasks, 3 repeats. Professional-service task completion with rubric-based grading on local files.
 
 ## Sources
 | Source | Perspective | Date |

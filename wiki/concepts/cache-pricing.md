@@ -4,9 +4,9 @@ type: concept
 
 # Cache Pricing
 
-Modelli di pricing per il caching dei prompt nelle API LLM, che variano significativamente tra provider.
+Pricing models for prompt caching in LLM APIs, which vary significantly across providers.
 
-## Modelli per provider
+## Models by provider
 
 | Provider | Cache Hit | Cache Write | Cache Storage |
 |----------|-----------|-------------|---------------|
@@ -14,13 +14,13 @@ Modelli di pricing per il caching dei prompt nelle API LLM, che variano signific
 | Google (Vertex/Gemini) | Sì | No | Sì (per ora) |
 | OpenAI, DeepSeek, altri | Sì | No | No |
 
-## Impatto sul blended price
+## Impact on blended price
 
-Il [[concepts/blended-price|blended price]] AA assume un rapporto 7:2:1 (cache hit : input : output), ma il costo reale dipende dal provider e dal caso d'uso specifico.
+The AA [[concepts/blended-price|blended price]] assumes a 7:2:1 ratio (cache hit : input : output), but the actual cost depends on the provider and specific use case.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/methodology]] | Definizione dei modelli di caching per provider | 2026-07-21 |
-| [[sources/performance-benchmarking]] | Token measurement usa provider-reported counts per l'Intelligence Index | 2026-07-21 |
+| [[sources/methodology]] | Definition of caching models by provider | 2026-07-21 |
+| [[sources/performance-benchmarking]] | Token measurement uses provider-reported counts for the Intelligence Index | 2026-07-21 |

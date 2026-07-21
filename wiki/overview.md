@@ -2,83 +2,83 @@
 type: overview
 ---
 
-# Artificial Analysis — Panoramica
+# Artificial Analysis — Overview
 
-Artificial Analysis è una piattaforma indipendente di analisi e benchmarking dell'AI. Valuta modelli linguistici, agenti, modelli di generazione media (immagini, video, speech) e provider API, offrendo metriche oggettive su **intelligenza**, **velocità** e **costo**.
+Artificial Analysis is an independent AI analysis and benchmarking platform. It evaluates language models, agents, media generation models (images, video, speech), and API providers, offering objective metrics on **intelligence**, **speed**, and **cost**.
 
-## Metodologia
+## Methodology
 
-AA benchmarka sia modelli proprietari che open weights. Il principio guida è misurare l'**esperienza reale dell'utente**, non le performance teoriche massime su hardware specifico. Vedi [[sources/methodology]] per i dettagli completi.
+AA benchmarks both proprietary and open-weight models. The guiding principle is to measure the **real user experience**, not theoretical maximum performance on specific hardware. See [[sources/methodology]] for full details.
 
-### Standard di misurazione
-- **Velocità**: misurata in [[concepts/token|OpenAI Tokens]] (tiktoken o200k_base) per confronti equi tra modelli
-- **Prezzi**: espressi in native token; il [[concepts/blended-price|blended price]] assume rapporto 7:2:1 (cache hit : input : output)
-- **Costo reale**: il [[concepts/cost-per-task|Cost per Task]] è pesato sui benchmark dell'Intelligence Index — incorpora la verbosità del modello
-- **Performance**: misurata come esperienza end-to-end del cliente, non throughput massimo teorico
+### Measurement standards
+- **Speed**: measured in [[concepts/token|OpenAI Tokens]] (tiktoken o200k_base) for fair comparisons across models
+- **Pricing**: expressed in native tokens; the [[concepts/blended-price|blended price]] assumes a 7:2:1 ratio (cache hit : input : output)
+- **Real cost**: [[concepts/cost-per-task|Cost per Task]] is weighted across Intelligence Index benchmarks — incorporates model verbosity
+- **Performance**: measured as end-to-end customer experience, not theoretical maximum throughput
 
-### Terminologia chiave
-La distinzione [[concepts/model-ecosystem|Model → Model Creator → Endpoint → Provider → System]] è fondamentale per interpretare i dati AA.
+### Key terminology
+The [[concepts/model-ecosystem|Model → Model Creator → Endpoint → Provider → System]] distinction is fundamental to interpreting AA data.
 
-### Valutazioni dell'Intelligence Index v4.1
+### Intelligence Index v4.1 evaluations
 
-L'[[concepts/intelligence-index|Intelligence Index v4.1]] aggrega 9 valutazioni indipendenti in 4 categorie (peso totale 100%):
+The [[concepts/intelligence-index|Intelligence Index v4.1]] aggregates 9 independent evaluations across 4 categories (total weight 100%):
 
-**Agenti (34%)**
-- **GDPval-AA v2 (20%)**: task di knowledge work agentico su dataset proprietario — è la valutazione a peso singolo più elevato
-- **τ³-Banking (14%)**: interazione cliente agentica nel dominio fintech, 97 task, sviluppato da [[entities/orgs/sierra|Sierra AI]]
+**Agents (34%)**
+- **GDPval-AA v2 (20%)**: agentic knowledge work tasks on a proprietary dataset — the highest single-weight evaluation
+- **τ³-Banking (14%)**: agentic customer interaction in the fintech domain, 97 tasks, developed by [[entities/orgs/sierra|Sierra AI]]
 
 **Coding (24%)**
-- **Terminal-Bench v2.1 (16%)**: task di terminale e system administration, sviluppato da [[entities/orgs/stanford|Stanford/Laude Institute]], 89 task
-- **SciCode (8%)**: generazione di codice scientifico
+- **Terminal-Bench v2.1 (16%)**: terminal and system administration tasks, developed by [[entities/orgs/stanford|Stanford/Laude Institute]], 89 tasks
+- **SciCode (8%)**: scientific code generation
 
-**Ragionamento scientifico (24%)**
-- **HLE — Humanity's Last Exam (12%)**: ragionamento estremo su domande di frontiera
-- **GPQA Diamond (6%)**: ragionamento scientifico avanzato
-- **CritPt (6%)**: ragionamento critico e valutazione di argomentazioni
+**Scientific reasoning (24%)**
+- **HLE — Humanity's Last Exam (12%)**: extreme reasoning on frontier questions
+- **GPQA Diamond (6%)**: advanced scientific reasoning
+- **CritPt (6%)**: critical reasoning and argument evaluation
 
-**Generale (18%)**
-- **AA-Omniscience (12%)**: conoscenza multidisciplinare (8% accuracy + 4% non-hallucination)
+**General (18%)**
+- **AA-Omniscience (12%)**: multidisciplinary knowledge (8% accuracy + 4% non-hallucination)
 - **AA-LCR (6%)**: long context reasoning
 
-Tutte le valutazioni usano scoring pass@1, temperatura 0 (modelli non-reasoning) o 0.6 (reasoning). Intervallo di confidenza ~±1%.
+All evaluations use pass@1 scoring, temperature 0 (non-reasoning models) or 0.6 (reasoning). Confidence interval ~±1%.
 
-## Framework di selezione
+## Selection framework
 
-AA propone un processo decisionale in tre passi: **use-case → modello → provider**. Vedi [[concepts/model-selection-framework]] e [[sources/guide]].
+AA proposes a three-step decision process: **use-case → model → provider**. See [[concepts/model-selection-framework]] and [[sources/guide]].
 
-## Aree coperte
+## Areas covered
 
-### Intelligence (modelli linguistici)
-- **Intelligence Index v4.1**: indice composito basato su 9 valutazioni indipendenti
-- **Valutazioni**: [[concepts/gdpval-aa|GDPval-AA v2]], [[concepts/tau3-banking|τ³-Banking]], [[concepts/terminal-bench|Terminal-Bench v2.1]], SciCode, Humanity's Last Exam, GPQA Diamond, CritPt, [[concepts/aa-omniscience|AA-Omniscience]], [[concepts/aa-lcr|AA-LCR]]
-- **[[concepts/aa-briefcase|AA-Briefcase]]**: benchmark agentico per knowledge work di lungo periodo
-- **Capability Indices**: indici settoriali (Agentic, Coding, Finance & Accounting, Strategy & Ops, Legal, Healthcare, Engineering, Economics)
+### Intelligence (language models)
+- **Intelligence Index v4.1**: composite index based on 9 independent evaluations
+- **Evaluations**: [[concepts/gdpval-aa|GDPval-AA v2]], [[concepts/tau3-banking|τ³-Banking]], [[concepts/terminal-bench|Terminal-Bench v2.1]], SciCode, Humanity's Last Exam, GPQA Diamond, CritPt, [[concepts/aa-omniscience|AA-Omniscience]], [[concepts/aa-lcr|AA-LCR]]
+- **[[concepts/aa-briefcase|AA-Briefcase]]**: agentic benchmark for long-duration knowledge work
+- **Capability Indices**: sector-specific indices (Agentic, Coding, Finance & Accounting, Strategy & Ops, Legal, Healthcare, Engineering, Economics)
 
-### Agenti e coding
-- **Coding Agent Index**: performance, costo e tempo di esecuzione su task di software engineering end-to-end
-- **AA-Agentic Index**: tool use, pianificazione, autonomia, problem solving complesso
+### Agents and coding
+- **Coding Agent Index**: performance, cost, and execution time on end-to-end software engineering tasks
+- **AA-Agentic Index**: tool use, planning, autonomy, complex problem solving
 
-### Velocità e latenza
-- [[concepts/output-speed|Output speed]] in token al secondo, tempo per task, latenza end-to-end
-- Confronto tra provider API (first-party e terze parti)
+### Speed and latency
+- [[concepts/output-speed|Output speed]] in tokens per second, time per task, end-to-end latency
+- Comparison across API providers (first-party and third-party)
 
-### Prezzo e costo
-- [[concepts/cost-per-task|Costo per task]] pesato sull'Intelligence Index
-- Prezzi per input, output, cache hit, cache write
-- [[concepts/cache-pricing|Modelli di pricing della cache]] per provider
+### Price and cost
+- [[concepts/cost-per-task|Cost per task]] weighted across the Intelligence Index
+- Pricing for input, output, cache hit, cache write
+- [[concepts/cache-pricing|Cache pricing models]] per provider
 
 ### Media
-- **Image Arena**: text-to-image, image editing (Elo da voti ciechi)
+- **Image Arena**: text-to-image, image editing (Elo from blind votes)
 - **Video Arena**: text-to-video, image-to-video, video editing
 - **Speech**: Text-to-Speech Arena, Speech-to-Text (AA-WER Index), Speech-to-Speech
 
-### Apertura
-- **[[concepts/openness-index|Openness Index]]**: trasparenza dei dati di training, metodologia, disponibilità dei pesi
+### Openness
+- **[[concepts/openness-index|Openness Index]]**: training data transparency, methodology, weight availability
 
-### Provider API
-- Performance e pricing comparati tra provider per modelli open-weight
-- Provider monitorati: [[entities/orgs/openai|OpenAI]], Anthropic, Google, [[entities/orgs/aws|AWS Bedrock]], Azure, [[entities/orgs/together-ai|Together AI]], Fireworks, Groq, DeepInfra, Cerebras, SambaNova e altri
+### API providers
+- Performance and pricing compared across providers for open-weight models
+- Monitored providers: [[entities/orgs/openai|OpenAI]], Anthropic, Google, [[entities/orgs/aws|AWS Bedrock]], Azure, [[entities/orgs/together-ai|Together AI]], Fireworks, Groq, DeepInfra, Cerebras, SambaNova, and others
 
-## Laboratori e creatori di modelli monitorati
+## Model labs and creators monitored
 
 [[entities/orgs/openai|OpenAI]], Anthropic, Google (Gemini), [[entities/orgs/meta|Meta]] (Llama/Muse), DeepSeek, Mistral, Kimi (Moonshot AI), SpaceXAI, MiniMax, NVIDIA, Alibaba (Qwen), Xiaomi, Z AI, Thinking Machines, Cohere, MBZUAI, Tencent

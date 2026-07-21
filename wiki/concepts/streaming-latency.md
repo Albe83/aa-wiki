@@ -4,28 +4,28 @@ type: concept
 
 # Streaming Latency (STT)
 
-Metriche di latenza per la trascrizione speech-to-text in modalità streaming, definite da Artificial Analysis.
+Latency metrics for speech-to-text transcription in streaming mode, defined by Artificial Analysis.
 
-## Metriche
+## Metrics
 
-- **Time to Final Transcript:** tempo dal rilevamento di fine parlato (via SileroVAD) alla ricezione del primo transcript marcato come Final dal modello.
-- **Time to First Partial Transcript:** tempo dal rilevamento di fine parlato alla ricezione del primo transcript Partial.
+- **Time to Final Transcript:** time from end-of-speech detection (via SileroVAD) to receiving the first transcript marked as Final by the model.
+- **Time to First Partial Transcript:** time from end-of-speech detection to receiving the first Partial transcript.
 
-## Meccanica
+## Mechanics
 
-L'audio viene streamato in chunk da 20ms. I modelli STT streaming restituiscono due tipi di transcript:
-- **Partials:** non ancora confermati, soggetti a modifiche
-- **Finals:** confermati, non più modificabili
+Audio is streamed in 20ms chunks. Streaming STT models return two types of transcripts:
+- **Partials:** not yet confirmed, subject to changes
+- **Finals:** confirmed, no longer modifiable
 
-Il forced endpointing usa SileroVAD per rilevare la fine del parlato e forzare la generazione di un transcript finale. Per i modelli che non supportano forced endpointing, si usa il primo Final naturale entro 2 secondi dalla fine del parlato.
+Forced endpointing uses SileroVAD to detect the end of speech and force generation of a final transcript. For models that do not support forced endpointing, the first natural Final within 2 seconds of end-of-speech is used.
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/speech-to-text-methodology]] | Metodologia streaming STT di AA | 2026-07-21 |
+| [[sources/speech-to-text-methodology]] | AA's streaming STT methodology | 2026-07-21 |
 
 ## Relationships
-- [[concepts/aa-wer]] — la valutazione streaming è parte di AA-WER v2.2
-- [[concepts/speech-to-text]] — contesto più ampio
-- [[concepts/word-error-rate]] — WER per final e partial transcript sono riportati separatamente
+- [[concepts/aa-wer]] — streaming evaluation is part of AA-WER v2.2
+- [[concepts/speech-to-text]] — broader context
+- [[concepts/word-error-rate]] — WER for final and partial transcripts are reported separately

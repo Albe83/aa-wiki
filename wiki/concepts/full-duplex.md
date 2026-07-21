@@ -4,22 +4,22 @@ type: concept
 
 # Full Duplex
 
-Modalità di conversazione in cui entrambi i partecipanti possono parlare simultaneamente, senza alternanza rigida dei turni. Nel contesto dei modelli speech-to-speech, un modello full duplex gestisce interruzioni, pause e backchannel in modo naturale.
+Conversation mode where both participants can speak simultaneously, without rigid turn-taking. In the context of speech-to-speech models, a full duplex model handles interruptions, pauses, and backchannel naturally.
 
-## Valutazione AA
+## AA Evaluation
 
-Il benchmark Conversational Dynamics nell'[[concepts/speech-to-speech-index|AA Speech-to-Speech Index]] valuta 4 abilità full duplex basate su Full Duplex Bench (Lin et al., 2025):
+The Conversational Dynamics benchmark in the [[concepts/speech-to-speech-index|AA Speech-to-Speech Index]] evaluates 4 full duplex skills based on Full Duplex Bench (Lin et al., 2025):
 
-- **Pause Handling:** il modello non interrompe durante le pause naturali dell'utente
-- **Turn Taking:** il modello prende il turno quando appropriato
-- **User Interruption Handling:** il modello gestisce interruzioni mid-conversazione
-- **Backchannel Handling:** il modello continua dopo backchannel ("yeah", "mm-hmm")
+- **Pause Handling:** the model does not interrupt during the user's natural pauses
+- **Turn Taking:** the model takes the turn when appropriate
+- **User Interruption Handling:** the model handles mid-conversation interruptions
+- **Backchannel Handling:** the model continues after backchannel ("yeah", "mm-hmm")
 
 ## Sources
 
 | Source | Perspective | Date |
 |--------|-------------|------|
-| [[sources/speech-to-speech-methodology]] | Implementazione AA di Full Duplex Bench v1 e v1.5 | 2026-07-21 |
+| [[sources/speech-to-speech-methodology]] | AA implementation of Full Duplex Bench v1 and v1.5 | 2026-07-21 |
 
 ## Relationships
-- [[concepts/speech-to-speech-index]] — la Conversational Dynamics è 1/3 dell'indice S2S
+- [[concepts/speech-to-speech-index]] — Conversational Dynamics is 1/3 of the S2S index

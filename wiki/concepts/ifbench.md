@@ -4,7 +4,7 @@ type: concept
 
 # IFBench
 
-IFBench (Instruction Following Benchmark): 294 task, 5 ripetizioni ciascuno. Risposta aperta con estrazione e valutazione rule-driven, misurata pass@1.
+IFBench (Instruction Following Benchmark): 294 tasks, 5 repeats each. Open-answer with rule-driven extraction and evaluation, measured pass@1.
 
 ## Sources
 | Source | Perspective | Date |

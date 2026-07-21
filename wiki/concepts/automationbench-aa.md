@@ -4,7 +4,7 @@ type: concept
 
 # AutomationBench-AA
 
-AutomationBench-AA: 657 task di automazione workflow SaaS con strumenti REST API. Scoring oggettivo di completamento; zero credit per violazioni di guardrail.
+AutomationBench-AA: 657 SaaS workflow automation tasks with REST API tools. Objective completion scoring; zero credit for guardrail violations.
 
 ## Sources
 | Source | Perspective | Date |

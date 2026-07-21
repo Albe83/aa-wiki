@@ -5,22 +5,22 @@ entity_type: org
 
 # Sierra
 
-Sierra AI, azienda specializzata in AI agentica per customer experience. Creatrice del framework τ-Bench/τ-Knowledge per il benchmarking di agenti conversazionali.
+Sierra AI, a company specialized in agentic AI for customer experience. Creator of the τ-Bench/τ-Knowledge framework for conversational agent benchmarking.
 
 ## Mentions across sources
 
 | Source | What's said | Date |
 |--------|-------------|------|
-| [[sources/intelligence-benchmarking]] | Creatori di τ³-Banking, parte dell'Intelligence Index AA (14% peso) | 2026-07-21 |
-| [[sources/speech-to-speech-methodology]] | Creatori di τ-Voice per benchmarking voice agents | 2026-07-21 |
+| [[sources/intelligence-benchmarking]] | Creators of τ³-Banking, part of the AA Intelligence Index (14% weight) | 2026-07-21 |
+| [[sources/speech-to-speech-methodology]] | Creators of τ-Voice for voice agent benchmarking | 2026-07-21 |
 
 ## Key facts
 
-- Framework τ-Knowledge valuta agenti su knowledge retrieval + tool use
-- τ³-Banking: 97 task nel dominio fintech, ~700 documenti di policy
-- τ-Voice: 278 scenari customer service con voice agents full duplex
+- τ-Knowledge framework evaluates agents on knowledge retrieval + tool use
+- τ³-Banking: 97 tasks in the fintech domain, ~700 policy documents
+- τ-Voice: 278 customer service scenarios with full-duplex voice agents
 
 ## Relationships
 
-- [[concepts/tau3-banking]] — benchmark agente per fintech
-- [[concepts/tau-voice]] — benchmark per voice agents
+- [[concepts/tau3-banking]] — agent benchmark for fintech
+- [[concepts/tau-voice]] — benchmark for voice agents
