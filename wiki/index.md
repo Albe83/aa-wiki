@@ -4,6 +4,7 @@
 - [[overview]] — Artificial Analysis overview: independent AI benchmarking platform
 
 ## Sources
+- [[sources/aa-wer-v2]] — AA-WER v2.0 launch: AA-AgentTalk dataset, cleaned VoxPopuli/Earnings22 | ingested 2026-07-21
 - [[sources/guide]] — AA usage guide: how to choose model and provider | ingested 2026-07-21
 - [[sources/methodology]] — Official AA methodology: scope, definitions, measurement standards | ingested 2026-07-21
 - [[sources/intelligence-benchmarking]] — Intelligence Index v4.1: composition and benchmarks | ingested 2026-07-21
@@ -56,6 +57,7 @@
 - [[concepts/output-speed]] — Performance metrics: TTFT, Output Speed, Response Time
 - [[concepts/serverless]] — Pay-per-use in the LLM API context
 - [[concepts/streaming-latency]] — Latency metrics for STT streaming: final and partial transcript
+- [[concepts/swatlas-qna]] — SWE-Atlas-QnA: 124 repository Q&A tasks, Coding Agent Index component
 - [[concepts/token]] — OpenAI Tokens vs Native Tokens, AA measurement standard
 - [[concepts/intelligence-index]] — Artificial Analysis Intelligence Index: composite intelligence index
 - [[concepts/gdpval-aa]] — GDPval-AA v2: benchmark on real work tasks
@@ -66,6 +68,7 @@
 - [[concepts/aa-lcr]] — AA-LCR: long context reasoning benchmark
 - [[concepts/openness-index]] — Openness Index: model openness and transparency index
 - [[concepts/bradley-terry]] — Statistical model for ranking from pairwise comparisons (used in all AA arenas)
+- [[concepts/voxpopuli-cleaned-aa]] — Cleaned EU parliamentary speech dataset, 628 samples, 25% AA-WER weight
 - [[concepts/word-error-rate]] — WER metric: formula, normalization, Levenshtein distance
 - [[concepts/cache-pricing]] — Cache pricing models: cache hit, write, storage
 - [[concepts/full-duplex]] — Simultaneous bidirectional conversation in speech-to-speech models
@@ -73,6 +76,8 @@
 - [[concepts/humanitys-last-exam]] — HLE: extreme reasoning benchmark
 - [[concepts/gpqa-diamond]] — GPQA Diamond: scientific reasoning benchmark
 - [[concepts/critpt]] — CritPt: critical reasoning benchmark
+- [[concepts/deepswe]] — DeepSWE: 113 long-horizon SE tasks, Coding Agent Index component
+- [[concepts/earnings22-cleaned-aa]] — Cleaned corporate earnings calls dataset, 6 samples, 25% AA-WER weight
 - [[concepts/harvey-lab-aa]] — Harvey LAB-AA: legal benchmark developed with Harvey
 - [[concepts/apex-agents-aa]] — APEX-Agents-AA: agentic benchmark
 - [[concepts/automationbench-aa]] — AutomationBench-AA: automation benchmark
@@ -86,6 +91,7 @@
 - [[concepts/capability-indices]] — Capability indices for skills and industries
 - [[concepts/coding-agent-index]] — Agentic coding composite index
 - [[concepts/aa-slt]] — System Load Test: AA system load benchmark
+- [[concepts/aa-agenttalk]] — Proprietary held-out STT dataset: voice agent speech, 469 samples, 50% AA-WER weight
 - [[concepts/aa-agentperf]] — AgentPerf: hardware benchmark for agentic deployments
 - [[concepts/image-arena]] — Qualitative evaluation arena for image generation
 - [[concepts/music-arena]] — Qualitative evaluation arena for music generation

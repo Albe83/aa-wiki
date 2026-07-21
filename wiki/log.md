@@ -67,3 +67,8 @@
 - Created: [[entities/orgs/artificial-analysis]], [[concepts/bradley-terry]], [[concepts/cache-pricing]], [[concepts/word-error-rate]], [[concepts/streaming-latency]], [[concepts/full-duplex]], [[concepts/lufs-normalization]]
 - Updated: [[index]]
 - Notes: Lint found 56 broken links from 21 missing pages. Fixed 7 high-priority concept pages + 1 entity (Artificial Analysis itself). Remaining 14 broken links are placeholder orgs in index — intentional, will be created when cited by sources.
+
+## [2026-07-21] ingest | AA-WER v2.0 article + missing concept pages
+- Created: [[sources/aa-wer-v2]], [[concepts/deepswe]], [[concepts/swatlas-qna]], [[concepts/aa-agenttalk]], [[concepts/voxpopuli-cleaned-aa]], [[concepts/earnings22-cleaned-aa]]
+- Updated: [[index]]
+- Notes: Filled gaps found during lint. DeepSWE and SWE-Atlas-QnA are Coding Agent Index components. AA-AgentTalk, VoxPopuli-Cleaned-AA, Earnings22-Cleaned-AA are the 3 datasets composing AA-WER v2.0+. Saved authoritative source: AA-WER v2.0 blog post and HuggingFace dataset cards to raw/.
